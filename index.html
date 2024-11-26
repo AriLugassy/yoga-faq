@@ -4,8 +4,92 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Main Street Yoga</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+
 </head>
 <body>
-    
+    <header>
+        <span>Main Street Yogurt</span>
+        <nav id="desktop-nav">
+            <menu>
+                <li>
+                    <a href="">Classes</a>
+                </li>
+                <li>
+                    <a href="">Schedule</a>
+                </li>
+                <li>
+                    <a href="">About</a>
+                </li>
+                <li>
+                    <a class="active-page" href="">FAQ</a>
+                </li>
+            </menu>
+
+
+        </nav>
+
+        <nav id="mobile-nav">
+            <button id="menu-button">
+                <img src="assets/imgs/hamburger.svg" alt="hamburger"> <br>
+                <span>Menu</span>
+            </button>
+            <div id="overlay-menu-container">
+                <div id="overlay-menu">
+                    <menu>
+                        <li>
+                            <a href="">Classes</a>
+                        </li>
+                        <li>
+                            <a href="">Schedule</a>
+                        </li>
+                        <li>
+                            <a href="">About</a>
+                        </li>
+                        <li>
+                            <a class="active-page" href="">FAQ</a>
+                        </li>
+                    </menu>
+                    <button id="close-menu">
+                        <img src="assets/imgs/close.svg" alt="Close Button"> <br>
+                        <span>Close</span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h1>Frquently Asked Questions</h1>
+        <article class="faq-question">
+            <button class="closed">What is Yogurt?</button>
+            <p>Yogurt is delicious and can be used to assist in many different athletic practices</p>
+        </article>
+        <article class="faq-question">
+            <button class="closed">I have never tried Yogurt before but I want to do it now.  Where should I start?</button>
+            <p>You should.  once you go yogurt you never go un-yogurt!</p>
+        </article>
+        <article class="faq-question">
+            <button class="closed">Are Yogurt classes safe?</button>
+            <p>Not at all!</p>
+        </article>
+        <article class="faq-question">
+            <button class="closed">Do I need special equipment for Yogurt practice?</button>
+            <p>BYOY! Bring your own yogurt and try not to get eviscerated by The Creature!</p>
+        </article>
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>

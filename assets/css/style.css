@@ -14,3 +14,134 @@ main {
     background-color: #D7E5E3;
 }
 
+header {
+    display: flex;
+    padding: 20px 20px 15px 15px;
+    justify-content: space-around;
+    background-color: #0C646F;
+    align-items: center;
+}
+header menu li {
+    list-style: none;
+}
+header span {
+    color: white;
+    font-size: 28px;
+
+}
+header menu li a {
+    color: white;
+    font-size: 22px;
+    text-decoration: none;
+    transition: color .5s;
+}
+header menu li a:hover {
+    color: #07e5e3;
+}
+header #desktop-nav menu {
+    display: flex;
+    gap: 40px;
+}
+
+header .active-page {
+    text-decoration: underline;
+}
+
+main button {
+    background-color: transparent;
+    border: none;
+    font-family: "Poppins";
+    font-size: 22px;
+    color: #0C646F;
+    border-bottom: 2px solid #0C646F;
+    width: 100%;
+    text-align: left;
+    position: relative;
+    padding-block: 15px;
+    cursor: pointer;
+}
+
+main button.closed::after {
+    content: '+';
+    position: absolute;
+    right: 0px;
+    font-size: 40px;
+    color: red;
+    
+}
+main button.open::after {
+    content: '-';
+    position: absolute;
+    right: 0px;
+    font-size: 40px;
+    color: red;
+    
+}
+
+.faq-question p {
+    display: none;
+}
+
+
+/* mobil menu */
+
+#mobile-nav button {
+    background-color: transparent;
+    border: 0;
+}
+
+#overlay-menu-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 100;
+    display: none;
+}
+
+#overlay-menu {
+    background-color: #076560;
+    width: 80%;
+    border-radius: 20px;
+    margin: 90px auto;
+    text-align: center;
+    padding: 50px;
+    position: relative;
+
+}
+#overlay-menu menu {
+    padding-left: 0%;
+}
+
+#overlay-menu menu li a {
+    font-size: 28px;
+    margin-block: 10px;
+    display: inline-block;
+    
+}
+#close-menu {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+#mobile-nav {
+    display: none;
+}
+
+
+@media (max-width: 900px) {
+    
+    #desktop-nav {
+        display: none;
+    }
+    #mobile-nav {
+        display: block;
+    }
+
+    main {
+        width: 90%;
+    }
+}
